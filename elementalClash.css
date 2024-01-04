@@ -1,0 +1,133 @@
+body {
+  background-image: url(images/avatar.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: Arial;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 3px solid lightgray;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.reset-score-button {
+  display: block;
+  margin: auto;
+  background-color: white;
+  border: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.moves-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: start;
+  align-items: center;
+  justify-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(images/avatar-resp.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial;
+  }
+
+  .moves-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    align-content: start;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .score {
+    margin-top: 10px;
+  }
+
+  .result {
+    margin-top: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-image: url(images/avatar-resp.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial;
+  }
+
+  .moves-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    align-content: start;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .score {
+    margin-top: 10px;
+  }
+
+  .result {
+    margin-top: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url(images/avatar.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial;
+  }
+
+  .moves-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: start;
+    align-items: center;
+    justify-items: center;
+  }
+}
