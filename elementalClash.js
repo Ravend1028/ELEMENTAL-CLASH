@@ -11,30 +11,30 @@ function playGame(playerMove) {
 
   let result = '';
 
-  if (playerMove === 'Fire') {
-    if (computerMove === 'Water') {
+  if (playerMove === 'fire') {
+    if (computerMove === 'water') {
       result = 'You lose.';
-    } else if (computerMove === 'Earth') {
+    } else if (computerMove === 'earth') {
       result = 'You win.';
-    } else if (computerMove === 'Fire') {
+    } else if (computerMove === 'fire') {
       result = 'Tie.';
     }
 
-  } else if (playerMove === 'Water') {
-    if (computerMove === 'Fire') {
+  } else if (playerMove === 'water') {
+    if (computerMove === 'fire') {
       result = 'You win.';
-    } else if (computerMove === 'Water') {
+    } else if (computerMove === 'water') {
       result = 'Tie.';
-    } else if (computerMove === 'Earth') {
+    } else if (computerMove === 'earth') {
       result = 'You lose.';
     }
     
-  } else if (playerMove === 'Earth') {
-    if (computerMove === 'Earth') {
+  } else if (playerMove === 'earth') {
+    if (computerMove === 'earth') {
       result = 'Tie.';
-    } else if (computerMove === 'Fire') {
+    } else if (computerMove === 'fire') {
       result = 'You lose.';
-    } else if (computerMove === 'Water') {
+    } else if (computerMove === 'water') {
       result = 'You win.';
     }
   }
@@ -70,11 +70,11 @@ function pickComputerMove() {
   let computerMove = '';
 
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computerMove = 'Fire';
+    computerMove = 'fire';
   } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove = 'Water';
+    computerMove = 'water';
   } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-    computerMove = 'Earth';
+    computerMove = 'earth';
   }
 
   return computerMove;
